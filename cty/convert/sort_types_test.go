@@ -77,7 +77,7 @@ func TestSortTypes(t *testing.T) {
 			idxs := sortTypes(test.Input)
 
 			if len(idxs) != len(test.Input) {
-				t.Fatalf("wrong number of indexes %q; want %q", len(idxs), len(test.Input))
+				t.Fatalf("wrong number of indexes %d; want %d", len(idxs), len(test.Input))
 			}
 
 			got := make([]cty.Type, len(idxs))
