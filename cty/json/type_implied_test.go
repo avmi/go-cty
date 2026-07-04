@@ -140,7 +140,7 @@ func TestImpliedTypeErrors(t *testing.T) {
 		},
 		{
 			`{true: null}`,
-			`invalid character 't'`,
+			trueAsPropertyNameError,
 		},
 	}
 
