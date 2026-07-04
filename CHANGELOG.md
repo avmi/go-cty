@@ -1,3 +1,7 @@
+# 1.19.0 (Unreleased)
+
+- When building with Go 1.27 or later, the various string operations that are defined in terms of UAX#29 grapheme cluster segmentation will now use the Unicode 17 character properties and rules. For older versions of Go, Unicode 15 is still used.
+
 # 1.18.1 (April 16, 2026)
 
 - stdlib: `ContainsFunc` now allows its second argument to be null, to test whether the given collection contains any null elements.
