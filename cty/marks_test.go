@@ -176,6 +176,23 @@ func TestValueMarks(t *testing.T) {
 	}
 }
 
+func TestValueMarksInsert(t *testing.T) {
+	marks := NewValueMarks(0)
+	marks.Insert(slices.Values([]any{2, 1}))
+	if !marks.Has(0) {
+		t.Error("marks set does not contain 0")
+	}
+	if !marks.Has(1) {
+		t.Error("marks set does not contain 1")
+	}
+	if !marks.Has(2) {
+		t.Error("marks set does not contain 2")
+	}
+	if len(marks) != 3 {
+		t.Errorf("marks set has %d elements; want 3", len(marks))
+	}
+}
+
 func TestPathValueMarksEqual(t *testing.T) {
 	tests := []struct {
 		original PathValueMarks
