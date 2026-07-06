@@ -1,3 +1,6 @@
+# 1.19.1 (Unreleased)
+
+
 # 1.19.0 (July 6, 2026)
 
 - When building with Go 1.27 or later, the various string operations that are defined in terms of UAX#29 grapheme cluster segmentation will now use the Unicode 17 character properties and rules. For older versions of Go, Unicode 15 is still used.
