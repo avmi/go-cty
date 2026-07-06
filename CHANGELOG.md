@@ -1,4 +1,4 @@
-# 1.19.0 (Unreleased)
+# 1.19.0 (July 6, 2026)
 
 - When building with Go 1.27 or later, the various string operations that are defined in terms of UAX#29 grapheme cluster segmentation will now use the Unicode 17 character properties and rules. For older versions of Go, Unicode 15 is still used.
 - The `cty.ValueMarks` type, which represents a set of value marks separately from any value, now has method `Has` for concisely testing if a specific mark is present, and `Insert` for inserting elements from an `iter.Seq[any]` into an existing set of marks for easier gradual construction without creating any temporary mark sets.
